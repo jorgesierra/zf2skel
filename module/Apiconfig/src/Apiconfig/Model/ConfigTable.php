@@ -27,7 +27,7 @@ class ConfigTable
     {
         $data = array(
             'client_id'    => $Config->client_id,
-            'client_name' => $Config->client_name,
+            'client_name'  => $Config->client_name,
             'client_location' => $Config->client_location,
             'values' => $Config->values
         );

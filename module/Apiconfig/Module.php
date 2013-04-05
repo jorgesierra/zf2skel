@@ -7,6 +7,7 @@ use Apiconfig\Model\Config;
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\tableGateway\tableGateway;
 
+
 class Module
 {
     public function getConfig()
