@@ -1,1 +1,22 @@
-index
+<?php 
+    $this->headtitle("Client Configurations");
+?>
+
+<h1>Client Configurations</h1>
+<a href="<?= $this->url('apiconfig', array('action' => 'add')); ?>">ADD</a>
+<table>
+  <tr>
+    <th>#</th>
+    <th>Client Name</th>
+    <th>Client Location</th>
+  </tr>
+  <?php foreach($configs as $config): ?>
+  <tr>
+    <td><a href="<?= $this->url('apiconfig', array('action' => 'edit', 'id'=>$config->id)); ?>"><?= $config->id; ?></a></td>
+    <td><?= $config->client_name;?></td>
+    <td><?= $config->client_location;?></td>
+  </tr>
+  <?php endforeach; ?>
+</table>
+
+
